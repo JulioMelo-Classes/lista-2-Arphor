@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Gabriel\Documents\GitHub\lista-2-Arphor\find\build\CMakeFiles\45db427697d6061384b925aaaa897e7f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CA6DD295-D56B-36D5-9FE4-74E3A3C46880}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

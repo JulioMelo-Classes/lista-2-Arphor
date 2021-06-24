@@ -1,0 +1,3 @@
+C:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/find/build/CMakeFiles/run_tests.dir
+C:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/find/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/find/build/CMakeFiles/ZERO_CHECK.dir
