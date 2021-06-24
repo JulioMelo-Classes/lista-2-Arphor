@@ -16,7 +16,20 @@ namespace graal {
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {
-    // TODO
+
+    auto size = last-first;
+    int count=0;
+
+    while(count<size){
+        for(auto i=(first+1); i<(last-count); i++){
+            auto temp = *i;
+            *i = *(i-1);
+            *(i-1) = temp;
+        }
+
+        count++;
+    }
+
 }
 
 }

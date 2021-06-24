@@ -26,8 +26,27 @@ namespace graal {
 template <typename Itr, typename Compare >
 std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 {
-    // TODO
-    return std::make_pair( first, first );
+
+    if(first == last){
+        return std::make_pair( first, first );
+    }
+
+    auto max=first;
+    auto min=first;
+
+    for(auto i = first; i<last; i++){
+        if(cmp(*min, *i)==true){
+            min = i;
+        }
+        if(cmp(*max, *i)==false){
+            max = i;
+        }
+    }
+
+    std::make_pair(min, max);
+
+
+    
 }
 
 }

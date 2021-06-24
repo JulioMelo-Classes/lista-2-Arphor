@@ -1,0 +1,10 @@
+^C:\USERS\GABRIEL\DOCUMENTS\GITHUB\LISTA-2-ARPHOR\REVERSE\BUILD\CMAKEFILES\48723F10DD1A5C44C20EE76807D19245\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/reverse -BC:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/reverse/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/reverse/build/GraalLibrary.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
