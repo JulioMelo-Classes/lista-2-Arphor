@@ -1,0 +1,10 @@
+^C:\USERS\GABRIEL\DOCUMENTS\GITHUB\LISTA-2-ARPHOR\UNIQUE\BUILD\CMAKEFILES\C82CAE0A0E39FB9C534451580B2DC423\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/unique -BC:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/unique/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/unique/build/GraalLibrary.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Gabriel\Documents\GitHub\lista-2-Arphor\test_manager\src\test_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Gabriel\Documents\GitHub\lista-2-Arphor\unique\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Gabriel\Documents\GitHub\lista-2-Arphor\unique\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D4E1DFD6-5AD1-3604-B91A-FCAA1036108C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
