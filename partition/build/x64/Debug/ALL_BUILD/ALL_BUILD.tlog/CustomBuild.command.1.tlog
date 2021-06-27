@@ -1,0 +1,10 @@
+^C:\USERS\GABRIEL\DOCUMENTS\GITHUB\LISTA-2-ARPHOR\PARTITION\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/partition -BC:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/partition/build --check-stamp-file C:/Users/Gabriel/Documents/GitHub/lista-2-Arphor/partition/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
