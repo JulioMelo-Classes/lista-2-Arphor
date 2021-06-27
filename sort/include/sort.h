@@ -16,7 +16,24 @@ namespace graal {
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {
-    // TODO
+    ForwardIt sorted = first+1;
+    ForwardIt move = first;
+
+    while(sorted<last){
+        while(move<sorted){
+            if(cmp(*sorted; *move)==true){
+                for(ForwardIt i = sorted; i>move; i--){
+                    auto temp = *i;
+                    *i = *(i-1);
+                    *(i-1) = temp;
+                }
+            }
+            move++;
+        }
+        sorted++;
+        move=first;
+        
+    }
 }
 
 }
