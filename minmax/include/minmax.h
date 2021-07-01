@@ -7,7 +7,7 @@ using std::pair;
 using std::distance;
 #include <algorithm>
 using std::sort;
-
+#include <iostream>
 namespace graal {
 
 /*! 
@@ -23,6 +23,9 @@ namespace graal {
  * @return Um std::pair contendo o menor e maior elemento, nesta ordem
  *
  */
+ /*
+ perto, vou considerar 30%
+ */
 template <typename Itr, typename Compare >
 std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 {
@@ -35,14 +38,14 @@ std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
     auto min=first;
 
     for(auto i = first; i<last; i++){
-        if(cmp(*min, *i)==true){
+        if(cmp(*min, *i)==true){ //aqui vc deveria ter feito o contrário cmp(a,b) é true se a<b
             min = i;
         }
         if(cmp(*max, *i)==false){
             max = i;
         }
     }
-
+    std::cout<<*min<<" "<<*max<<std::endl;
     std::make_pair(min, max);
 
 

@@ -13,12 +13,15 @@ namespace graal {
 /*! 
  * TODO: documentação no estilo doxygen
  */
+ /*
+ 80%
+ */
 template<class InputIt1, class InputIt2, class Equal>
 bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
 {
     
     while(first1!=last1){
-        if(eq(*first1, *first2)==false){
+        if(eq(*first1, *first2)==false){ //aqui vc pode usar if(!eq(...))
             return false;
         }
         first1++;

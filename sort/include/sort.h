@@ -13,6 +13,9 @@ namespace graal {
 /*! 
  * TODO: documentação no estilo doxygen
  */
+ /*
+ 80% tinha um erro de compilação, mas ok
+ */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {
@@ -21,7 +24,7 @@ void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 
     while(sorted<last){
         while(move<sorted){
-            if(cmp(*sorted; *move)==true){
+            if(cmp(*sorted, *move)==true){
                 for(ForwardIt i = sorted; i>move; i--){
                     auto temp = *i;
                     *i = *(i-1);
